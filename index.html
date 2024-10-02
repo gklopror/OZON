@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="progress-container">
+        <div class="progress-block">
+            <svg class="progress-ring" width="120" height="120">
+                <circle class="progress-ring__circle" stroke="blue" stroke-width="4" fill="transparent" r="54" cx="60"
+                    cy="60" />
+            </svg>
+        </div>
+    </div>
+
+    <div class="controls">
+        <!-- Ввод значения -->
+        <div class="value-container">
+            <label class="inputBlock" for="valueInput">Value </label>
+            <input type="number" id="valueInput" min="0" max="100" value="0" class="progress-value-input">
+        </div>
+
+        <!-- Элемент анимации -->
+        <div class="toggle-container">
+            <label class="animateBlock" for="animateToggle">Animate </label>
+            <label class="switch">
+                <input type="checkbox" id="animateToggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <!-- Элемент скрытия -->
+        <div class="toggle-container">
+            <label class="hideBlock" for="hideToggle">Hide </label>
+            <label class="switch">
+                <input type="checkbox" id="hideToggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
