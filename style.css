@@ -7,6 +7,13 @@ body {
   margin: 0;
 }
 
+.progress-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 20px
+}
+
 .progress-container {
   margin-bottom: 20px;
   position: relative;
